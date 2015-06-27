@@ -21,7 +21,7 @@
 
             return ContentTypePrefix + firstTwopartsOfNamespace + "\r\n\r\n" + messageBody;
         } 
-
+         
         public object GetObject(string messageToDeserialise)
         {
             var messageParts = messageToDeserialise.Split(new[] { '\r', '\n' }, StringSplitOptions.RemoveEmptyEntries);
