@@ -4,8 +4,6 @@ namespace MEungblut.Websockets
 
     using MEungblut.Websockets.Owin;
 
-    using Possum.Infrastructure.Logging;
-
     public class LoggingWebSocketManagerDecorator : IWebSocketManager
     {
         private readonly ILoggingFrameworkAdapter loggingFrameworkAdapter;

@@ -1,17 +1,17 @@
 ﻿namespace MEungblut.Websockets.Owin
 {
-    public class PossumWebSocketConnectionFactory : IWebSocketConnectionFactory
+    public class OwinWebSocketConnectionFactory : IWebSocketConnectionFactory
     {
         private OwinWebSocketManager _manager;
 
-        public PossumWebSocketConnectionFactory(OwinWebSocketManager manager)
+        public OwinWebSocketConnectionFactory(OwinWebSocketManager manager)
         {
             this._manager = manager;
         }
 
         public WebSocketConnection GetWebSocketConnection()
         {
-            return new PossumWebSocketConnection(this._manager);
+            return new OwinWebSocketConnection(this._manager);
         }
     }
 }

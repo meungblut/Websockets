@@ -6,14 +6,14 @@
     using System.Threading.Tasks;
 
     [WebSocketRoute("/ws")]
-    public class PossumWebSocketConnection : WebSocketConnection
+    public class OwinWebSocketConnection : WebSocketConnection
     {
-        public static event EventHandler<PossumWebSocketConnection> SocketConnected;
+        public static event EventHandler<OwinWebSocketConnection> SocketConnected;
 
-        public event EventHandler<PossumWebSocketConnection> SocketDisconnected;
+        public event EventHandler<OwinWebSocketConnection> SocketDisconnected;
         public event EventHandler<SocketMessage> MessageReceived;
 
-        public PossumWebSocketConnection(OwinWebSocketManager manager)
+        public OwinWebSocketConnection(OwinWebSocketManager manager)
         {
             this.Id = Guid.NewGuid();
         }

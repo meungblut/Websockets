@@ -8,8 +8,6 @@
 
     using NUnit.Framework;
 
-    using Possum.Infrastructure.Logging;
-
     [TestFixture]
     public class LoggingWebSocketManagerDecoratorShould
     {

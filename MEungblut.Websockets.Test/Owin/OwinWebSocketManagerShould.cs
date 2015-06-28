@@ -19,7 +19,7 @@
         void Configure(IAppBuilder builder)
         {
             this.Manager = new OwinWebSocketManager();
-            this._connectionFactory = new PossumWebSocketConnectionFactory((OwinWebSocketManager)this.Manager);
+            this._connectionFactory = new OwinWebSocketConnectionFactory((OwinWebSocketManager)this.Manager);
             builder.MapWebSocketRoute("/ws", this._connectionFactory);
         }
 

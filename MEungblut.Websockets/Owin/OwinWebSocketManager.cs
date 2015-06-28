@@ -6,7 +6,7 @@
 
     public class OwinWebSocketManager : IWebSocketManager
     {
-        private readonly ConcurrentDictionary<Guid, PossumWebSocketConnection> _connectedSocketSessions;
+        private readonly ConcurrentDictionary<Guid, OwinWebSocketConnection> _connectedSocketSessions;
 
         public Guid Id { get; private set; }
 
@@ -17,11 +17,11 @@
         public OwinWebSocketManager()
         {
             this.Id = Guid.NewGuid();
-            this._connectedSocketSessions = new ConcurrentDictionary<Guid, PossumWebSocketConnection>();
-            PossumWebSocketConnection.SocketConnected += this.PossumWebSocketConnection_SocketConnected;
+            this._connectedSocketSessions = new ConcurrentDictionary<Guid, OwinWebSocketConnection>();
+            OwinWebSocketConnection.SocketConnected += this.OwinWebSocketConnection_SocketConnected;
         }
 
-        void PossumWebSocketConnection_SocketConnected(object sender, PossumWebSocketConnection e)
+        void OwinWebSocketConnection_SocketConnected(object sender, OwinWebSocketConnection e)
         {
             if (this.SocketConnected != null)
                 this.SocketConnected(this, e.Id);
@@ -38,7 +38,7 @@
                 this.MessageReceived(this, e);
         }
 
-        void e_SocketDisconnected(object sender, PossumWebSocketConnection e)
+        void e_SocketDisconnected(object sender, OwinWebSocketConnection e)
         {
             if (this.SocketDisconnected != null)
                 this.SocketDisconnected(this, e.Id);
@@ -49,7 +49,7 @@
         
         public void SendMessage(Guid socketIdentifier, string message)
         {
-            PossumWebSocketConnection connection;
+            OwinWebSocketConnection connection;
             if(! this._connectedSocketSessions.TryGetValue(socketIdentifier, out connection))
                 throw new ArgumentException("I don't know about a socket with id " + socketIdentifier);
 

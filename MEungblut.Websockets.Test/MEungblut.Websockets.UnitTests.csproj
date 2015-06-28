@@ -75,10 +75,6 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
     </Reference>
-    <Reference Include="Possum.Infrastructure.Logging, Version=1.0.5544.10540, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Possum.Infrastructure.Logging.1.0.5544.10540\lib\net451\Possum.Infrastructure.Logging.dll</HintPath>
-    </Reference>
     <Reference Include="SuperSocket.SocketEngine">
       <HintPath>..\packages\SuperWebSocketNETServer.0.8\lib\net45\SuperSocket.SocketEngine.dll</HintPath>
     </Reference>
@@ -103,7 +99,6 @@
     <Compile Include="SuperWebSocket\SuperWebsocketServerWithDotNetClient.cs" />
     <Compile Include="SuperWebSocket\SuperWebsocketServerWithWebSocket4NetClient.cs" />
     <Compile Include="Owin\OwinWebsocketServerWithWebSocket4NetClient.cs" />
-    <Compile Include="Owin\OwinWebsocketServerWithDotNetClient.cs" />
     <Compile Include="SuperWebSocket\SuperWebsocketManagerShould.cs" />
     <Compile Include="SuperWebSocket\WebSocketConfigDouble.cs" />
     <Compile Include="WebSocketManagerTestBase.cs" />
