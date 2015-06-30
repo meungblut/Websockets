@@ -8,7 +8,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("MEungblut.Websockets")]
 [assembly: AssemblyDescription("Web socket handling")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Matt eungblut")]
+[assembly: AssemblyCompany("Matt Eungblut")]
 [assembly: AssemblyProduct("MEungblut.Websockets")]
 [assembly: AssemblyCopyright("Copyright ©  2015")]
 [assembly: AssemblyTrademark("")]
