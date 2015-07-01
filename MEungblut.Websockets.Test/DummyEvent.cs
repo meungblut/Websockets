@@ -10,5 +10,7 @@ namespace MEungblut.Websockets.UnitTests
         }
 
         public string Id { get; set; }
+
+        public string SomeData { get; set; }
     }
 }

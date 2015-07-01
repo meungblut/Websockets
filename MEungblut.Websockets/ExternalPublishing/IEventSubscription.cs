@@ -10,7 +10,7 @@
             this.Id = Guid.NewGuid();
         }
 
-        public abstract bool NotifyFor(IDomainEvent eventRaised);
+        public abstract bool NotifyFor(object eventRaised);
 
         public Guid SubscriberId { get; protected set; }
 

@@ -9,7 +9,7 @@
         {
         }
 
-        public override bool NotifyFor(IDomainEvent eventRaised)
+        public override bool NotifyFor(object eventRaised)
         {
             throw new NotImplementedException("Null subscription shouldn't be called");
         }

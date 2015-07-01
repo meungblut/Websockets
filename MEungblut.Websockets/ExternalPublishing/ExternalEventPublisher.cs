@@ -11,7 +11,7 @@ namespace MEungblut.Websockets.ExternalPublishing
             this.subscriberCommunicator = communicator;
         }
 
-        public void Publish(IDomainEvent eventToPublish)
+        public void Publish(object eventToPublish)
         {
             foreach (var eventSubscription in this.subscriptionRepository.Get())
             {

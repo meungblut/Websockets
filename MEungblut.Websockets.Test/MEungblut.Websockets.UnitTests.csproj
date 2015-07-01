@@ -87,6 +87,14 @@
     <Compile Include="Config\AppConfigSocketConfigurationShould.cs" />
     <Compile Include="DummyEvent.cs" />
     <Compile Include="DummyEventSubscription.cs" />
+    <Compile Include="ExternalPublishing\CustomerOrderToDummyIdMatcher.cs" />
+    <Compile Include="ExternalPublishing\DummyEventSubscription.cs" />
+    <Compile Include="ExternalPublishing\ExternalEventPublisherShould.cs" />
+    <Compile Include="ExternalPublishing\ExternalEventPublishingEventDispatcherShould.cs" />
+    <Compile Include="ExternalPublishing\ExternalEventSubscriberShould.cs" />
+    <Compile Include="ExternalPublishing\IResourceToDomainIdentityMatcher.cs" />
+    <Compile Include="ExternalPublishing\NeverNotifyingEventSubscription.cs" />
+    <Compile Include="ExternalPublishing\Protocol\StompSerialiserShould.cs" />
     <Compile Include="LoggingWebSocketManagerShould.cs" />
     <Compile Include="SuperWebSocket\SuperWebsocketServerWithDotNetClient.cs" />
     <Compile Include="SuperWebSocket\SuperWebsocketServerWithWebSocket4NetClient.cs" />

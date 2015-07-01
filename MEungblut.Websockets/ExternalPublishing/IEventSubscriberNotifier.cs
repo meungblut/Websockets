@@ -4,6 +4,6 @@ namespace MEungblut.Websockets.ExternalPublishing
 
     public interface IEventSubscriberNotifier
     {
-        void Notify(Guid subscriberId, IDomainEvent eventToPublish);
+        void Notify(Guid subscriberId, object eventToPublish);
     }
 }

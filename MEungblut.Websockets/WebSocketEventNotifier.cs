@@ -40,7 +40,7 @@
             this.externalEventSubscription.UnsubscribeAll(guid);
         }
 
-        public void Notify(Guid subscriberId, IDomainEvent eventToPublish)
+        public void Notify(Guid subscriberId, object eventToPublish)
         {
             var serialisedMessage = this.serialiser.GetString(eventToPublish);
             this.webSocketManager.SendMessage(subscriberId, serialisedMessage);

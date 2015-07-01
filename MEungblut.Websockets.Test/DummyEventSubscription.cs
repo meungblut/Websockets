@@ -11,7 +11,7 @@ namespace MEungblut.Websockets.UnitTests
             this.Id = subscriptionId;
         }
 
-        public override bool NotifyFor(IDomainEvent eventRaised)
+        public override bool NotifyFor(object eventRaised)
         {
             return true;
         }
