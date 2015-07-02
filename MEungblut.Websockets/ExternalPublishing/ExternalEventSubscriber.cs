@@ -12,8 +12,8 @@
         {
             this.resourceToDomainIdentityMatcherFactory = eventResourceToDomainIdentityMatcherFactory;
             this.subscriptionRepository = repository;
-        }
-
+        } 
+         
         public EventSubscription Subscribe(EventSubscriptionMessage subscriptionMessage)
         { 
             foreach (var resourceMatcher in this.resourceToDomainIdentityMatcherFactory.GetResourceMatchers())
