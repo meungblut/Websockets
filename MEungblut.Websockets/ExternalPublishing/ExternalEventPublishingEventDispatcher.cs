@@ -11,7 +11,7 @@
 
         public void Notify(IDomainEvent domainEvent)
         {
-            this.eventPublisher.Publish(domainEvent);
+            this.eventPublisher.Publish(domainEvent); 
         }
     }
 }
