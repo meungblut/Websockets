@@ -19,5 +19,13 @@ namespace MEungblut.Websockets.ExternalPublishing
                     this.subscriberCommunicator.Notify(eventSubscription.SubscriberId, eventToPublish);
             }
         }
+
+        public void Broadcast(object eventToPublish)
+        {
+            foreach (var eventSubscription in this.subscriptionRepository.Get())
+            {
+                this.subscriberCommunicator.Notify(eventSubscription.SubscriberId, eventToPublish);
+            }
+        }
     }
 }
