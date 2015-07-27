@@ -19,7 +19,7 @@
 
             this.Server = System.Configuration.ConfigurationManager.AppSettings["Websocket:Server"];
         }
-
+         
         public int Port { get; private set; }
 
         public string Server { get; private set; }
