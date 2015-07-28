@@ -16,11 +16,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MEungblut.Websockets", "MEu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MEungblut.Websockets.UnitTests", "MEungblut.Websockets.Test\MEungblut.Websockets.UnitTests.csproj", "{CD42FCA9-986F-4C6A-B245-74181DF6DB79}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{4DDDDAE8-85F4-4253-B27A-08DF95F5FF03}"
-	ProjectSection(SolutionItems) = preProject
-		PushNuget.bat = PushNuget.bat
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
